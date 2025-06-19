@@ -1,0 +1,101 @@
+VISION:  # git 的编码
+
+GLOBAL:
+  exp_name: 
+  save_result_dir: ./output
+  manual_seed: 42
+  device: '0' # 'cpu' or '0' or '0,1,2,3' ...
+  data_dir: 
+  # data_file_dir: ./data_dir
+  cutoff_way: youden-index
+  eval_metric: roc_auc
+
+TRAIN:
+  train_data_file: unpaired_NC_FDG_data_list.txt
+
+  image_size:
+  data_norm: True       # normalize image to [-1, 1]
+  batch_size: 2
+  num_workers: 4
+
+  max_iter: 
+  max_train_loss: 0.5
+  early_stop: False
+  early_stop_min_delta:
+  early_stop_patience:
+
+  gan_start_iter: 1
+
+  log_interval: 100
+  val_interval: 100
+
+TEST:
+  test_data_file_dict: {} 
+  test_experiment_dir:
+  iter_test: 
+
+  image_size:
+  data_norm: True       # normalize image to [-1, 1]
+  batch_size: 1
+  num_workers: 4
+
+  vis_num: 10
+  vis_slice: 28
+
+  mask: False
+
+  save_result_statue: True
+  save_result_dir_name: test_no_mask
+
+MODEL:
+  name: 
+
+  pretrain_gen:               # which pretrained generator to load
+  pretrain_dis:             # which discriminator to load
+  resume_checkpoint:
+
+  feature_size: 
+  in_channels: 1
+  feature_channels: 16
+  out_channels: 1
+  sc_beta: 1
+  num_res_blocks: 2
+  dropout: 0.0
+  channel_mult: [1, 2, 4, 4]
+
+  encoder_not_tf_level:
+  decoder_not_tf_level:
+
+  mask: False
+  mask_k: 0.6
+  mask_prob: 1
+  mask_size: 4
+
+  noise: True
+  noise_type: poisson
+  noise_scale: 0.1
+  sampling_rate: 4
+
+  spectral_norm: True            # use spectral normalization
+  init_type: xavier              # initialization [normal | kaiming | xavier | orthogonal]
+  init_gain: 0.2                # initialization gain
+
+OPTIMIZER:
+  name: adam
+  lr_g: 0.0002
+  lr_d: 0.0002
+  beta1: 0.5                     # adam optimizer beta1
+  beta2: 0.999                 # adam optimizer beta2
+
+
+LOSS:
+  name:
+  gan_mode: hinge                # mode of gan loss [vanilla | lsgan | wgan | hinge]
+  gan_weight: 
+  cycle_weight: 
+  recon_weight:
+  identity_weight:
+  mid_contrast_weight: 
+  cycle_noise_type: l1
+  cycle_noise_weight: 
+  contrast_weight: 
