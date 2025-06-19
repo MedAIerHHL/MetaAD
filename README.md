@@ -31,8 +31,6 @@ Haolin Huang*, [Zhenrong Shen](https://zhenrongshen.github.io/)*, Jing Wang\*, X
 
 ## Citation
 
-If you use this code or use our pre-trained weights for your research, please cite our papers:
-
 ```
 @inproceedings{huang2024metaad,
   author = {Huang, Haolin and Shen, Zhenrong and Wang, Jing and Wang, Xinyu and Lu, Jiaying and Lin, Huamei and Ge, Jingjie and Zuo, Chuantao and Wang, Qian and others},
