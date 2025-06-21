@@ -11,6 +11,7 @@
 
 ## News
 
+- We believe that the MetaAD paradigm can be applied to lesion detection in CT/MR imaging, such as non-contrast CT → contrast-enhanced CT → non-contrast CT, enabling the detection of subtle lesions in non-contrast CT. If you are interested in this area, feel free to explore MetaAD and reach out to us for discussion. Please contact us!
 - We have released our preliminary code. We are currently reorganizing the entire framework. If you encounter any issues, please contact us at 1729766533@qq.com. (preliminary code reference: https://github.com/ZhenrongShen/FDG-to-CFT_PET_Synthesis)
 - We received the **MICCAI 2024 Young Scientist Award**. You can find more details [here](https://miccai.org/index.php/about-miccai/awards/best-paper-award-and-young-scientist-award/).
 - Our paper was selected as a *Best Paper Candidate*.
@@ -23,9 +24,14 @@
 
 This repository provides the official implementation in the following paper:
 
-**MetaAD: Metabolism-Aware Anomaly Detection for Parkinson's Disease in 3D [18F]FDG PET**
+**[MetaAD: Metabolism-Aware Anomaly Detection for Parkinson&#39;s Disease in 3D [18F]FDG PET](https://link.springer.com/chapter/10.1007/978-3-031-72069-7_28)**
 
 Haolin Huang*, [Zhenrong Shen](https://zhenrongshen.github.io/)*, Jing Wang\*, Xinyu Wang, Jiaying Lu, Huamei Lin, Jingjie Ge, Chuantao Zuo#, [Qian Wang](https://qianwang.space/)#
+### Keywords
+
+**3D Medical Image Anomaly Detection**, **FDG PET**
+
+This repository focuses on advancing the field of 3D medical image anomaly detection, particularly leveraging [^18F]FDG PET imaging. By introducing the MetaAD paradigm, we aim to enhance the detection of subtle metabolic anomalies, providing a novel approach for Parkinson's disease diagnosis and beyond.
 
 <p align="center"><img width="90%" src="documents/metaad_train.png" /></p>
 
