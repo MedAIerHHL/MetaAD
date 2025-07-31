@@ -25,7 +25,7 @@ This repository provides the official implementation in the following paper:
 
 **[MetaAD: Metabolism-Aware Anomaly Detection for Parkinson&#39;s Disease in 3D [18F]FDG PET](https://link.springer.com/chapter/10.1007/978-3-031-72069-7_28)**
 
-Haolin Huang*, [Zhenrong Shen](https://zhenrongshen.github.io/)*, Jing Wang\*, Xinyu Wang, Jiaying Lu, Huamei Lin, Jingjie Ge, Chuantao Zuo#, [Qian Wang](https://qianwang.space/)#
+[Haolin Huang](https://scholar.google.com/citations?user=Hr87lqsAAAAJ&hl=zh-CN)*, [Zhenrong Shen](https://zhenrongshen.github.io/)*, Jing Wang\*, Xinyu Wang, Jiaying Lu, Huamei Lin, Jingjie Ge, Chuantao Zuo#, [Qian Wang](https://qianwang.space/)#
 ### Keywords
 
 **3D Medical Image Anomaly Detection**, **FDG PET**
